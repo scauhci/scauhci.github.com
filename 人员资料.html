@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/inner_modify-person.css">
+  <script type="text/javascript" src="../js/jquery-1.7.min.js"></script>
+  <script src="../js/modify_person_info.js"></script>
+</head>
+<body>
+	<nav class="nav">
+      <ul class="nav-box">
+        <li class="nav-item current">
+          <img class="hci-logo" src="../image/hci_logo.png">
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/main_page_logo.png">
+          <span class="nav-item-text">首页</span>
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/persons_logo.png">
+          <span class="nav-item-text">人员资料</span>
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/projects_logo.png">
+          <span class="nav-item-text">项目管理</span>
+        </li>
+        <div class="more-box">
+          <div class="icon-box">
+            <i class="icon"></i>
+          </div>
+          <ul class="more-ul">
+            <li class="more-item">修改个人资料</li>
+            <li class="more-item">退出</li>
+          </ul>
+        </div>
+      </ul>
+  </nav>
+  <div class="person-container">
+    <div class="left-photo-box">
+      <img class="photo" src="../image/person.png">
+      <p>
+      <input id="upload-input" type="file"> 
+      <input class="btn" id="save-input" type="button" value="保存">  
+      </p>
+    </div>
+    <div class="right-person-box">
+      <h1>基本信息<span>（<span class="red">*</span>必须填写项）</span></h1>
+      <h2>以下信息将显示在<span class="blue">个人资料页</span>，方便大家了解你</h2>
+      <div class="person-info-box">
+        <!--name开始-->
+        <div class="person-info-row">
+          <label for="name" class="person-info-label"><span class="red">*</span>姓名:</label>
+          <input id="name" type="text" name="name" />
+        </div>
+        <!--number开始-->
+        <div class="person-info-row">
+          <label for="number" class="person-info-label"><span class="red">*</span>学号:</label>
+          <input id="number" type="text" name="number" />
+        </div>
+        <!--sex开始-->
+        <div class="person-info-row person-sex-row">
+          <span class="person-info-label"><span class="red">*</span>性别:</span>
+          <input id="male" type="radio" name="sex" /><label for="male">男</label>
+          <input id="female" type="radio" name="sex" /><label for="female">女</label>
+        </div>
+        <!--grade开始-->
+        <div class="person-info-row">
+          <label for="grade" class="person-info-label">年级:</label>
+          <input id="grade" type="text" name="grade" />
+        </div>
+        <!--学院开始-->
+        <div class="person-info-row">
+          <label for="institude" class="person-info-label">学院:</label>
+          <input id="institude" type="text" name="institude" />
+        </div>
+        <!--专业班级开始-->
+        <div class="person-info-row">
+          <label for="class" class="person-info-label">专业班级:</label>
+          <input id="class" type="text" name="class" />
+        </div>
+        <!--长号开始-->
+        <div class="person-info-row">
+          <label for="longphoto" class="person-info-label">长号:</label>
+          <input id="longphoto" type="text" name="longphoto" />
+        </div>
+        <!--短号开始-->
+        <div class="person-info-row">
+          <label for="shortphoto" class="person-info-label">短号:</label>
+          <input id="shortphoto" type="text" name="shortphoto" />
+        </div>
+        <!--身份开始-->
+        <div class="person-info-row">
+          <label for="identify" class="person-info-label">身份:</label>
+          <input id="identify" type="text" name="identify" />
+        </div>
+        <!--专业特长开始-->
+        <div class="person-info-row">
+          <label for="goodat" class="person-info-label">专业特长:</label>
+          <input id="goodat" type="text" name="goodat" />
+        </div>
+        <!--家乡地址开始-->
+        <div class="person-info-row">
+          <label for="adress" class="person-info-label">家乡地址:</label>
+          <input id="adress" type="text" name="adress" />
+        </div>
+        <!--部门开始-->
+        <div class="person-info-row">
+          <label for="department" class="person-info-label">部门:</label>
+          <!-- <input id="department" type="text" name="department" /> -->
+          <select id="department">
+            <option>用户体验部</option>
+            <option>后台研发部</option>
+            <option>移动开发部</option>
+            <option>测试运营部</option>
+          </select>
+        </div>
+        <!--Email开始-->
+        <div class="person-info-row">
+          <label for="email" class="person-info-label nospace">Email:</label>
+          <input id="email" type="text" name="email" />
+        </div>
+        <!--QQ开始-->
+        <div class="person-info-row">
+          <label for="QQ" class="person-info-label nospace">QQ:</label>
+          <input id="QQ" type="text" name="QQ" />
+        </div>
+        <div class="person-info-row modify-pssword-box">
+          <label for="password" class="person-info-label">密码:</label>
+          <input id="password" type="text" name="password" />
+          <input class="btn" id="modify-password-btn" type="button" value="修改密码">
+        </div>
+        <div class="person-info-row modify-pssword-box new-password-box">
+          <label for="new-password" class="person-info-label">新密码:</label>
+          <input id="new-password" type="text" name="new-password" />
+        </div>
+        <div class="person-info-row modify-pssword-box new-password-box">
+          <label for="new-password-again" class="person-info-label">重复密码:</label>
+          <input id="new-password-again" type="text" name="new-password-again" />
+        </div>
+        <div class="person-info-row">
+          <button class="btn submit-btn" type="submit">提交</button>
+          <button class="btn reset-btn" type="reset">重置</button>
+        </div>
+      </div>
+    </div>
+  </div>

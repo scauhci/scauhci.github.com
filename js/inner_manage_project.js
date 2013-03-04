@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$(".current-page-a").mouseover(function(){
+		$(".page-ul").css("display","block");
+	});
+	$(".current-page-a").mouseout(function(){
+		$(".page-ul").css("display","none");
+	});
+	$(".page-ul").mouseover(function(){
+		$(".page-ul").css("display","block");
+	});
+	$(".page-ul").mouseout(function(){
+		$(".page-ul").css("display","none");
+	});
+});

@@ -1,0 +1,159 @@
+*{
+	padding:0;
+	margin: 0;
+	outline: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color: #9cc239;
+	-moz-box-shadow:0 10px 8px #cacacc;
+	-webkit-box-shadow:0 10px 8px #cacacc;
+	box-shadow:0 10px 8px #cacacc;
+}
+.nav-box{
+	padding-left: 150px;
+	width: 525px;
+	width: 1600px;
+	list-style: none;
+	color:#fff;
+}
+.nav-item{
+	width: 130px;
+	height: 60px;
+	float: left;
+	border-left:1px solid #7f9c2e;
+	cursor: pointer;
+}
+.nav-item:last-child{
+	border-right:1px solid #7f9c2e;
+}
+.current{
+	background-color: #8cae33;
+}
+.nav-item:hover{
+	background-color: #a6c84d;
+}
+.hci-logo{
+	padding: 16px 30px;
+}
+.nav-item-logo{
+	float: left;
+	padding: 20px 0 0 21px;
+}
+.nav-item-text{
+	float: left;
+	padding: 22px 0 0 13px;
+}
+
+@media (min-width:1200px){
+.department-box{
+	width: 100px;
+	height: 400px;
+	float: left;
+	margin-top: 140px;
+	margin-left:70px;
+}
+.circle:hover{
+    background-color: #9cc239;
+}
+.circle{ border:3px solid #9cc239; width:70px; height:70px; margin:0 auto;
+-webkit-border-radius:50px;
+-moz-border-radius:50px;
+-o-border-radius:50px;
+border-radius:50px;
+}
+.line{
+	width: 0px;
+	height: 25px;
+	border-left: 3px solid #9cc239;
+	margin: 0 auto;
+}
+.circle span{
+	display: inline-block;
+	margin: 25px 3px 0 3px;
+	color: #9a9a9a;
+}
+}
+
+@media (max-width:1200px){
+   .department-box{
+	width: 800px;
+	height: 80px;
+	margin: 28px 0 0 155px;
+}
+.circle:hover{
+    background-color: #9cc239;
+}
+.circle{ border:3px solid #9cc239; width:70px; height:70px; margin:0 auto;
+-webkit-border-radius:50px;
+-moz-border-radius:50px;
+-o-border-radius:50px;
+border-radius:50px;
+float: left;
+}
+.line{
+	float: left;
+	width: 25px;
+    height: 0px;
+    border-top: 3px solid #9cc239;
+    margin-top: 33.5px;
+}
+.circle span{
+	display: inline-block;
+	margin: 25px 3px 0 3px;
+	color: #9a9a9a;
+}
+}
+
+
+
+
+
+.person-photo{
+	width: 130px;
+	height: 177px;
+}
+.person-box{
+	width: 860px;
+	margin: 0 auto;
+
+}
+.persons{
+	list-style: none;
+}
+.person{
+	width: 860px;
+	min-height: 245px;
+	height: auto!important;
+	height: 245px;
+	margin-top: 28px;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+.person-photo-box{
+	float: left;
+	margin: 35px;
+}
+.person-info-box{
+	width: 700px;
+	margin: 30px 0 0 240px;
+}
+.person-info-row{
+	padding: 3px 0;
+}
+.person-info-item{
+	display: inline-block;
+	width: 340px;
+}
+
+
+

@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/inner_manage_person.css">
+  <script type="text/javascript" src="../js/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="../js/inner_manage_person.js"></script>
+</head>
+<body>
+	<nav class="nav">
+      <ul class="nav-box">
+        <li class="nav-item current">
+          <img class="hci-logo" src="../image/hci_logo.png">
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/main_page_logo.png">
+          <span class="nav-item-text">首页</span>
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/persons_logo.png">
+          <span class="nav-item-text">人员资料</span>
+        </li>
+        <li class="nav-item">
+          <img class="nav-item-logo" src="../image/projects_logo.png">
+          <span class="nav-item-text">项目管理</span>
+        </li>
+        <div class="more-box">
+          <div class="icon-box">
+            <i class="icon"></i>
+          </div>
+          <ul class="more-ul">
+            <li class="more-item">修改个人资料</li>
+            <li class="more-item">退出</li>
+          </ul>
+        </div>
+      </ul>
+  </nav>
+
+  <!-- 浮动框 -->
+  <div class="department-box">
+    <div class="circle">
+      <button class="department-btn">前端部门</button>
+    </div>
+    <div class="line"></div>
+    <div class="circle">
+      <button class="department-btn">后台部门</button>
+    </div>
+    <div class="line"></div>
+    <div class="circle">
+      <button class="department-btn">测试部门</button>
+    </div>
+    <div class="line"></div>
+    <div class="circle">
+      <button class="department-btn">体验部门</button>
+    </div>
+  </div>
+
+  <div class="person-box">
+    <ul class="persons">
+      <li class="person">
+        <div class="person-photo-box">
+          <img class="person-photo" src="../image/person.png">
+        </div>
+        <div class="person-info-box">
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>姓名:</label>
+              <span>白富美</span>
+            </section>
+            <section class="person-info-item">
+              <label>性别:</label>
+              <span>女</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学号:</label>
+              <span>201022222222</span>
+            </section>
+            <section class="person-info-item">
+              <label>年级:</label>
+              <span>2011</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学院:</label>
+              <span>信息学院</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业班级:</label>
+              <span>网络工程1班</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>长号:</label>
+              <span>8888888888888</span>
+            </section>
+            <section class="person-info-item">
+              <label>短号:</label>
+              <span>222222</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>身份（在HCI职务）:</label>
+              <span>负责人</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业特长:</label>
+              <span>js、H5、java</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>家乡地址:</label>
+              <span>广州</span>
+            </section>
+            <section class="person-info-item">
+              <label>部门:</label>
+              <span>前端</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>Email:</label>
+              <span>xxxxx@gmail.com</span>
+            </section>
+            <section class="person-info-item">
+              <label>QQ:</label>
+              <span>22222222</span>
+            </section>
+          </section>
+          
+        </div>
+      </li>
+      
+      <li class="person">
+        <div class="person-photo-box">
+          <img class="person-photo" src="../image/person.png">
+        </div>
+        <div class="person-info-box">
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>姓名:</label>
+              <span>白富美</span>
+            </section>
+            <section class="person-info-item">
+              <label>性别:</label>
+              <span>女</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学号:</label>
+              <span>201022222222</span>
+            </section>
+            <section class="person-info-item">
+              <label>年级:</label>
+              <span>2011</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学院:</label>
+              <span>信息学院</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业班级:</label>
+              <span>网络工程1班</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>长号:</label>
+              <span>8888888888888</span>
+            </section>
+            <section class="person-info-item">
+              <label>短号:</label>
+              <span>222222</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>身份（在HCI职务）:</label>
+              <span>负责人</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业特长:</label>
+              <span>js、H5、java</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>家乡地址:</label>
+              <span>广州</span>
+            </section>
+            <section class="person-info-item">
+              <label>部门:</label>
+              <span>前端</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>Email:</label>
+              <span>xxxxx@gmail.com</span>
+            </section>
+            <section class="person-info-item">
+              <label>QQ:</label>
+              <span>22222222</span>
+            </section>
+          </section>
+        </div>
+      </li>
+      <li class="person">
+        <div class="person-photo-box">
+          <img class="person-photo" src="../image/person.png">
+        </div>
+        <div class="person-info-box">
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>姓名:</label>
+              <span>白富美</span>
+            </section>
+            <section class="person-info-item">
+              <label>性别:</label>
+              <span>女</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学号:</label>
+              <span>201022222222</span>
+            </section>
+            <section class="person-info-item">
+              <label>年级:</label>
+              <span>2011</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学院:</label>
+              <span>信息学院</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业班级:</label>
+              <span>网络工程1班</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>长号:</label>
+              <span>8888888888888</span>
+            </section>
+            <section class="person-info-item">
+              <label>短号:</label>
+              <span>222222</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>身份（在HCI职务）:</label>
+              <span>负责人</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业特长:</label>
+              <span>js、H5、java</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>家乡地址:</label>
+              <span>广州</span>
+            </section>
+            <section class="person-info-item">
+              <label>部门:</label>
+              <span>前端</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>Email:</label>
+              <span>xxxxx@gmail.com</span>
+            </section>
+            <section class="person-info-item">
+              <label>QQ:</label>
+              <span>22222222</span>
+            </section>
+          </section>
+          
+        </div>
+      </li>
+      
+      <li class="person">
+        <div class="person-photo-box">
+          <img class="person-photo" src="../image/person.png">
+        </div>
+        <div class="person-info-box">
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>姓名:</label>
+              <span>白富美</span>
+            </section>
+            <section class="person-info-item">
+              <label>性别:</label>
+              <span>女</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学号:</label>
+              <span>201022222222</span>
+            </section>
+            <section class="person-info-item">
+              <label>年级:</label>
+              <span>2011</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>学院:</label>
+              <span>信息学院</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业班级:</label>
+              <span>网络工程1班</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>长号:</label>
+              <span>8888888888888</span>
+            </section>
+            <section class="person-info-item">
+              <label>短号:</label>
+              <span>222222</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>身份（在HCI职务）:</label>
+              <span>负责人</span>
+            </section>
+            <section class="person-info-item">
+              <label>专业特长:</label>
+              <span>js、H5、java</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>家乡地址:</label>
+              <span>广州</span>
+            </section>
+            <section class="person-info-item">
+              <label>部门:</label>
+              <span>前端</span>
+            </section>
+          </section>
+          <section class="person-info-row">
+            <section class="person-info-item">
+              <label>Email:</label>
+              <span>xxxxx@gmail.com</span>
+            </section>
+            <section class="person-info-item">
+              <label>QQ:</label>
+              <span>22222222</span>
+            </section>
+          </section>
+        </div>
+      </li>
+      <li class="more-load"><a class="more-load-text">加载更多成员</a></li>
+    </ul>
+    <div class="page-box">
+      <div class="page-box-row">
+        <a href="" class="current-page-a">第 1 页</a>
+        <span class="triangle"></span>
+        <ul class="page-ul">
+          <li class="page-item current-page-li">第 1 页</li>
+          <li class="page-item">第 2 页</li>
+          <li class="page-item">第 3 页</li>
+          <li class="page-item">第 4 页</li>
+          <li class="page-item">第 5 页</li>
+        </ul>
+      </div>
+      <button class="next-page-btn">下一页</button>
+    </div>
+  </div>
+  
+</body>
+</html>
