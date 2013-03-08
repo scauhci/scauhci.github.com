@@ -427,11 +427,15 @@ keyframes swing{
 	width: 250px;
 	height: 250px;
 }
+.person-img{
+	width: 250px;
+	height: 250px;
+}
 .lower{
 	position: absolute;
 	width: 250px;
 	height: 250px;
-	top: 250px;
+	top: 215px;
 	left: 0;
 	/*background-color: rgba(0,0,0,0.7);*/
 	background: url(../image/login_bg.png);

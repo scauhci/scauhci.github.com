@@ -56,8 +56,11 @@ window.onload = function(){
   });
   $(".person-item").mouseout(function(){
     $(this).children(".lower").stop();
-    $(this).children(".lower").animate({"top":"250"},250);
+    $(this).children(".lower").animate({"top":"215"},250);
   });
+
+  /*加载优秀成员的图片*/
+  initImg();
 }
 
 var Book = {
@@ -131,4 +134,11 @@ var LoginBox = {
       $(".login-box").animate({"margin-top":"-152px"},800);
     LoginBox.count++;
   }
+}
+
+function initImg(){
+  for(var i=1;i<=6;i++){
+    $("#person"+i+"-img").attr("src","image/person"+i+".png");
+  }
+  $("#book-img").attr("src","image/book_leftpic.jpg");
 }
