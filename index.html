@@ -423,10 +423,10 @@
       }
       document.getElementsByTagName("body")[0].appendChild(script);
     }
-    loadScript("js/jquery-1.7.min.js",function(){});
-    loadScript("js/responsiveslides.min.js",function(){});
-    loadScript("js/jquery.scrollTo.js",function(){});
-    loadScript("js/jquery.nav.js",function(){
+    loadScript("js/jquery-1.7.min.js",function(){
+      loadScript("js/responsiveslides.min.js",function(){});
+      loadScript("js/jquery.scrollTo.js",function(){});
+      loadScript("js/jquery.nav.js",function(){});
       loadScript("js/text.js",function(){});
     });
   </script>
