@@ -397,10 +397,37 @@
   </div>
   <div class="footer">©2012 华南农业大学人机交互实验室</div>
   
-  <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <!--<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
   <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.js"></script> -->
+  <script>
+    function loadScript(url,callback){
+      var script = document.createElement("Script");
+      script.type = "text/javascript";
+      script.src = url;
+      if(script.readyState){
+         /*Fuck IE*/
+         script.onreadyStatechange = function(){
+          if(script.readyState == "load" || script == "complete"){
+            script.onreadyStatechange = null;
+            callback();
+          }
+         };
+      }
+      else{
+        script.onload = function(){
+          callback();
+        };
+      }
+      document.getElementsByTagName("body")[0].appendChild(script);
+    }
+    loadScript("js/jquery-1.7.min.js",function(){
+      loadScript("js/responsiveslides.min.js",function(){});
+      loadScript("js/jquery.scrollTo.js",function(){});
+      loadScript("js/jquery.nav.js",function(){});
+    });
+  </script>
   <script type="text/javascript" src="js/text.js"></script>
 </body>
 </html>
