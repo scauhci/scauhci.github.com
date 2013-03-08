@@ -141,4 +141,5 @@ function initImg(){
     $("#person"+i+"-img").attr("src","image/person"+i+".png");
   }
   $("#book-img").attr("src","image/book_leftpic.jpg");
+  $("#point-container").attr("src","image/301.gif");
 }
