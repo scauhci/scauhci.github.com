@@ -453,6 +453,9 @@ keyframes swing{
 	height: 250px;
 	margin: 50px auto;
 }
+.first-person-row{
+	margin-top: 25px;
+}
 .person-item{
 	position: relative;
 	float: left;

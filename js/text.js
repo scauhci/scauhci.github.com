@@ -3,7 +3,7 @@ window.onload = function(){
   $(document).ready(function() {
     $('#nav').onePageNav({
       scrollSpeed:700,
-      scrollOffset:200
+      scrollOffset:160
     });
   });
 
