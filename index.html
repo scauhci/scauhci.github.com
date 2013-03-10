@@ -7,16 +7,20 @@
 </head>
 <body>
   <div class="header">
-
     <div class="login-box">
         <h1 class="login-title">HCI成员登陆</h1>
         <div class="login-row">
+          <label class="login-rowitem1">用户名:</label>
           <input type="text" placeholder="用户名" id="account">
-          <input type="checkbox" id="remember">
-          <label for="remember" id="remember_label">记住我</label>
+          <label class="login-rowitem2">验证码:</label>
+          <input type="text" placeholder="验证码" id="check">
+          <img class="check-num" src="">
         </div>
         <div class="login-row">
+          <label class="login-rowitem1">密码:</label>
           <input type="password" placeholder="密码" id="password">
+          <input type="checkbox" id="remember">
+          <label for="remember" id="remember_label">记住我</label>
           <input type="submit" id="submit" value="提交">
 
           <!-- win8 loading 图标 -->
@@ -40,14 +44,13 @@
               <div class="point point6"></div>
             </div>
           </div> -->
-          <img alt="loading" class="point-container" id="point-container">
+          <img src="image/301.gif" class="point-container">
         </div>
-
         <div class="switch">
-          <div class="rope"></div>
-          <div class="rope-logo">
+          <div class="rope" title="登录"></div>
+            <div class="rope-logo" title="登录">
               <!--<img src="../image/logo.png" alt="" class="rope-logo">-->
-          </div>
+            </div>
         </div>
     </div>
     <div class="nav-box">
@@ -116,6 +119,7 @@
 
 
     <div class="section" id="section-2">
+      <h2 class="person-title">核心人员</h2>
       <div class="person-row">
         <div class="person-item person-item-first">
           <div class="upper">

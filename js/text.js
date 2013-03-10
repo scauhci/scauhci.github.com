@@ -131,7 +131,7 @@ var LoginBox = {
     if(LoginBox.count%2==0)
     $(".login-box").animate({"margin-top":"0px"},800);
     else
-      $(".login-box").animate({"margin-top":"-152px"},800);
+      $(".login-box").animate({"margin-top":"-130px"},800);
     LoginBox.count++;
   }
 }
