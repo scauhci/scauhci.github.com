@@ -295,8 +295,15 @@ keyframes rotation{
 }
 .rope{
 	width: 0px;
-	height: 135px;
+	height: 65px;
 	border: 1px solid #000;
+}
+.rope-tag{
+	margin-left: -52px;
+	width: 70px; 
+	height: 70px;
+	background: url("../image/logo.png");
+	background-position: -0px -328px;
 }
 .rope-logo{
 	margin-left: -14px;
@@ -360,31 +367,30 @@ keyframes swing{
 .callbacks_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 65%;
-  opacity: 0.7;
+  top: 70%;
   z-index: 3;
   text-indent: -9999px;
   overflow: hidden;
   text-decoration: none;
-  height: 61px;
-  width: 38px;
-  background: transparent url("../image/themes.gif") no-repeat left top;
+  width: 38px; 
+  height: 38px;
+  background: transparent url("../image/logo.png") no-repeat left top;
   margin-top: -45px;
 }
 .prev{
 	left: 0;
+	background-position: -0px -408px;
 }
 .next{
 	left: 922px;
-	background-position: right top;
+	background-position: -0px -456px;
 }
 .caption{
 	position: absolute;
 	width: 100%;
 	padding:5px 0;
 	top: 0;
-	opacity: 0.7;
-	background-color: #000;
+	background: url(../image/login_bg.png);
 	color: #fff;
 	text-align: center;
 	font-size: 25px;
@@ -771,6 +777,7 @@ keyframes swing{
 }
 #book-item0:hover,#book-item1:hover,#book-item2:hover,#book-item3:hover,#book-item4:hover,#book-item5:hover,#book-item6:hover,#book-item7:hover,#book-item8:hover,#book-item9:hover,#book-item10:hover,#book-item11:hover{
 	background-color: #000;
+	border: 3px solid #fff;
 }
 .book-item-author{
 	padding: 10px 10px 0 0;
