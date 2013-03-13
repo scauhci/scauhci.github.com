@@ -137,6 +137,9 @@ var LoginBox = {
 }
 
 function initImg(){
+  for(var i=1;i<=3;i++){
+    $("#slider-0"+i).attr("src","image/slider_0"+ i +".png")
+  }
   for(var i=1;i<=6;i++){
     $("#person"+i+"-img").attr("src","image/person"+i+".png");
   }

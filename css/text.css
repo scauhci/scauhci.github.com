@@ -341,33 +341,37 @@ keyframes swing{
 }
 
 /*幻灯片部分*/
-#slider4{
-	list-style: none;
-}
 .slider-image{
 	width: 960px;
-	height: 495px;
+	height: 591px;
 }
 .slider-image1{
-	background-color: #ec6e6a;
+	background-color: #94dc76;
 }
 .slider-image2{
-	background-color: #7affac;
+	background-color: #77a4e5;
 }
 .slider-image3{
-	background-color: #7a99ff;
+	background-color: #ddc271;
+}
+#slider-01,#slider-02,#slider-03{
+	width: 960px;
+	height: 591px;
+}
+#slider4{
+	list-style: none;
 }
 .callbacks_container{
 	position: relative;
 	width: 960px;
-	height: 495px;
+	height: 650px;
 	padding-top: 168px;
 	margin: auto;
 }
 .callbacks_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 70%;
+  top: 60%;
   z-index: 3;
   text-indent: -9999px;
   overflow: hidden;
@@ -437,7 +441,9 @@ keyframes swing{
 }
 .introduction-content p{
 	font-size: 15px;
+	padding-top: 5px;
 	text-indent: 20px;
+	line-height: 19px;
 	word-break:break-all; 
 }
 
