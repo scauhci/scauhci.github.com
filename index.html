@@ -430,7 +430,7 @@
          alert("onreadystatechange is not undefined");
          script.onreadyStatechange = function(){
           alert("IE");
-          if(!script.readyState || script.readyState == "load" || script.readyState == "complete"){
+          if(!script.readyState || script.readyState === "loaded" || script.readyState === "complete"){
             alert("complete");
             script.onreadyStatechange = null;
             callback();
