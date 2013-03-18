@@ -419,10 +419,12 @@
   <script type="text/javascript" src="js/jquery.nav.js"></script> 
   <script type="text/javascript" src="js/text.js"></script>-->
   <script>
+  alert("begin");
     function loadScript(url,callback){
       var script = document.createElement("Script");
       script.type = "text/javascript";
       script.src = url;
+      alert("start loading");
       if(script.onreadystatechange !== undefined){
          /*Fuck IE*/
          script.onreadyStatechange = function(){
