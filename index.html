@@ -429,8 +429,8 @@
          /*Fuck IE*/
          alert("onreadystatechange is not undefined");
          script.onreadyStatechange = function(){
-          alert("IE");
-          if(!script.readyState || script.readyState === "loaded" || script.readyState === "complete"){
+          alert(script.readyState);
+          if(!script.readyState || script.readyState == "loaded" || script.readyState == "complete"){
             alert("complete");
             script.onreadyStatechange = null;
             callback();
