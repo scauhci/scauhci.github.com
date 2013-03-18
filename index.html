@@ -426,7 +426,9 @@
       if(script.readyState){
          /*Fuck IE*/
          script.onreadyStatechange = function(){
+          alert("IE");
           if(script.readyState == "load" || script.readyState == "complete"){
+            alert("complete");
             script.onreadyStatechange = null;
             callback();
           }
