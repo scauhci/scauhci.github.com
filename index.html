@@ -427,8 +427,8 @@
       alert("start loading");
       if(script.onreadystatechange !== undefined){
          /*Fuck IE*/
-         alert(script.readyState);
-         script.onreadyStatechange = function(){
+         alert(script.onreadystatechange);
+         script.onreadystatechange = function(){
           alert(script.readyState);
           if(!script.readyState || script.readyState == "loaded" || script.readyState == "complete"){
             alert("complete");
