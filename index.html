@@ -423,7 +423,7 @@
       var script = document.createElement("Script");
       script.type = "text/javascript";
       script.src = url;
-      if(script.readyState){
+      if(script.onreadystatechange !== undefined){
          /*Fuck IE*/
          script.onreadyStatechange = function(){
           alert("IE");
