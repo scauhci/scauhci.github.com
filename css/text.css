@@ -446,7 +446,17 @@ keyframes swing{
 	line-height: 19px;
 	word-break:break-all; 
 }
-
+.video-introduction-box{
+	margin: 45px auto auto 280px;
+}
+.video-introduction{
+	text-decoration: underline;
+	font-size: 20px;
+	color: #666;
+}
+.video-introduction:hover{
+	text-decoration: none;
+}
 /*优秀人员展示*/
 #section-2{
 	width: 860px;
