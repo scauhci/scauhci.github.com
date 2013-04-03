@@ -73,14 +73,25 @@ var Book = {
   },
   init : function(){
     var items = $(".book-item");
-    $(items).css({
-      "top":parseInt(560-400*Math.sin(3*12*Math.PI/180))+"px",
-      "left":parseInt(460-500*Math.cos(3*12*Math.PI/180))+"px",
-      "-webkit-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
-      "-moz-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
-      "-o-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
-      "transform":"rotate("+parseInt(-90+(3*12))+"deg)"
-    });
+    if ( $.browser.msie && $.browser.version<9.0 ) {
+      $(items).css({
+        "top":parseInt(540-400*Math.sin(3*12*Math.PI/180))+"px",
+        "left":parseInt(400-500*Math.cos(3*12*Math.PI/180))+"px",
+        "filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(Math.PI/180*(-90+(3*12)))+",M12 = "+ parseFloat(-Math.sin(Math.PI/180*(-90+(3*12)))) + ",M21 =" + Math.sin(Math.PI/180*(-90+(3*12))) + ",M22 =" +Math.cos(Math.PI/180*(-90+(3*12)))+ ",sizingMethod = 'auto expand')",
+        "-ms-filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(Math.PI/180*(-90+(3*12))) +",M12 = "+ parseFloat(-Math.sin(Math.PI/180*(-90+(3*12)))) + ",M21 =" + Math.sin(Math.PI/180*(-90+(3*12))) + ",M22 =" +Math.cos(Math.PI/180*(-90+(3*12)))+ ",sizingMethod = 'auto expand')"
+      });
+    }
+    else {
+      $(items).css({
+        "top":parseInt(560-400*Math.sin(3*12*Math.PI/180))+"px",
+        "left":parseInt(460-500*Math.cos(3*12*Math.PI/180))+"px",
+        "-webkit-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
+        "-moz-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
+        "-o-transform":"rotate("+parseInt(-90+(3*12))+"deg)",
+        "transform":"rotate("+parseInt(-90+(3*12))+"deg)",
+        "-ms-transform":"rotate("+parseInt(-90+(3*12))+"deg)"
+      });
+    }
   },
   licensing : function (){
     var i=0,index=0;
@@ -92,16 +103,25 @@ var Book = {
       var item = items[i];
       var index = i+3;
       $(item).attr("id","book-item"+i);
-      $("#book-item"+i).css({
+      if ( $.browser.msie && $.browser.version<9.0 ) {
+        $("#book-item"+i).css({
+          "top":parseInt(540-400*Math.sin(index*12*Math.PI/180))+"px",
+          "left":parseInt(400-500*Math.cos(index*12*Math.PI/180))+"px",
+          "filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(Math.PI/180*(-90+(index*12)))+",M12 = "+ parseFloat(-Math.sin(Math.PI/180*(-90+(index*12)))) + ",M21 =" + Math.sin(Math.PI/180*(-90+(index*12))) + ",M22 =" +Math.cos(Math.PI/180*(-90+(index*12)))+ ",sizingMethod = 'auto expand')",
+          "-ms-filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(Math.PI/180*(-90+(index*12))) +",M12 = "+ parseFloat(-Math.sin(Math.PI/180*(-90+(index*12)))) + ",M21 =" + Math.sin(Math.PI/180*(-90+(index*12))) + ",M22 =" +Math.cos(Math.PI/180*(-90+(index*12)))+ ",sizingMethod = 'auto expand')"
+        });
+      }
+      else {
+        $("#book-item"+i).css({
         "top":parseInt(560-400*Math.sin(index*12*Math.PI/180))+"px",
         "left":parseInt(460-500*Math.cos(index*12*Math.PI/180))+"px",
         "-webkit-transform":"rotate("+parseInt(-90+(index*12))+"deg)",
         "-moz-transform":"rotate("+parseInt(-90+(index*12))+"deg)",
         "-o-transform":"rotate("+parseInt(-90+(index*12))+"deg)",
         "transform":"rotate("+parseInt(-90+(index*12))+"deg)",
-        "filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(parseInt(-90+(index*12))) +",M12 = "+ parseFloat(-Math.sin(parseInt(-90+(index*12)))) + ",M21 =" + Math.sin(parseInt(-90+(index*12))) + ",M22 =" +Math.cos(parseInt(-90+(index*12)))+ ",sizingMethod = 'auto expand')",
-        "-ms-filter": "progid:DXImageTransform.Microsoft.Matrix(M11="+ Math.cos(parseInt(-90+(index*12))) +",M12 = "+ parseFloat(-Math.sin(parseInt(-90+(index*12)))) + ",M21 =" + Math.sin(parseInt(-90+(index*12))) + ",M22 =" +Math.cos(parseInt(-90+(index*12)))+ ",sizingMethod = 'auto expand')"
-      });
+        "-ms-transform":"rotate("+parseInt(-90+(index*12))+"deg)"
+        });
+      }
       i++;
     },60);
   },
