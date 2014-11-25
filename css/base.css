@@ -1,0 +1,162 @@
+/*global*/
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Microsoft YaHei;
+	color: #000;
+}
+
+.container {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*第一层*/
+.join {
+	height: 600px;
+	background-color: #0884f6;
+}
+
+.join-word {
+	display: block;
+	float: left;
+	width: 700px;
+	padding-top: 120px;
+}
+
+.join-title {
+	width: 614px;
+	height: 152px;
+	background-image: url(../img/join-title.jpg);
+}
+
+.join-word ul {
+	margin: 46px 0 16px 0;
+	padding-left: 80px;
+	color: #feff32;
+	font-size: 25px;
+}
+
+.join-word ul li {
+	padding-bottom: 10px;
+}
+
+.join-img {
+	display: block;
+	float: left;
+	width: 300px;
+	padding-top: 170px;
+}
+
+.logo {
+	width: 260px;
+	height: 260px;
+	background-image: url(../img/logo.png);
+}
+
+/*第二层*/
+.introduction {
+	height: 500px;
+	background-color: #e3e1e1;
+}
+
+.introduction article h1 {
+	padding-top: 40px;
+	font-size: 50px;
+	margin: 0;
+	text-align: center;
+}
+
+.introduction article p {
+	font-size: 30px;
+	text-indent: 2em;
+}
+
+/*第三层*/
+.excessive {
+	height: 145px;
+	background-color: #eb3e38;
+}
+
+.excessive h1 {
+	display: block;
+	float: left;
+	width: 427.5px;
+	margin: 0;
+	font-family: LiSu;
+	font-size: 55px;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+}
+
+.arrow {
+	display: block;
+	float: left;
+	width: 145px;
+	height: 145px;
+	background-image: url(../img/arrow.jpg);
+}
+
+/*第四层和第五层*/
+.item {
+	height: 330px;
+}
+
+.item-img {
+	display: block;
+	float: left;
+	padding: 31px 0 0 50px;
+}
+
+.item-word {
+	display: block;
+	float: left;
+	width: 700px;
+	padding: 60px 0 0 40px;
+	font-size: 25px;
+	text-indent: 2em;
+	margin: 0;
+}
+
+.work {
+	background-color: #e1af00;
+}
+
+.work-title {
+	width: 202px;
+	height: 258px;
+	background-image: url(../img/work-title.jpg);
+}
+
+.amusement {
+	background-color: #00a702;
+}
+
+.amusement-title {
+	width: 202px;
+	height: 258px;
+	background-image: url(../img/amusement-title.jpg);
+}
+
+/*footer*/
+footer {
+	height: 80px;
+	background-color: #eeeeee;
+	padding-top: 10px;
+}
+
+.footer-title {
+	font-size: 30px;
+	margin: 0;
+	text-align: center;
+} 
+
+.footer-content {
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+	color: #666;
+} 

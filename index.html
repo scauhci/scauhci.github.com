@@ -1,453 +1,64 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>HCI官网</title>
-  <link rel="stylesheet" href="css/text.css">
+	<title>scauhci</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
 <body>
-  <div class="header">
-    <div class="login-box">
-        <h1 class="login-title">HCI成员登陆</h1>
-        <div class="login-row">
-          <label class="login-rowitem1">用户名:</label>
-          <input type="text" placeholder="用户名" id="account">
-          <label class="login-rowitem2">验证码:</label>
-          <input type="text" placeholder="验证码" id="check">
-          <img class="check-num" src="">
-        </div>
-        <div class="login-row">
-          <label class="login-rowitem1">密码:</label>
-          <input type="password" placeholder="密码" id="password">
-          <input type="checkbox" id="remember">
-          <label for="remember" id="remember_label">记住我</label>
-          <input type="submit" id="submit" value="提交">
-
-          <!-- win8 loading 图标 -->
-          <!-- <div class="point-container">
-            <div class="point-box point-box-1">
-              <div class="point point1"></div>
-            </div>
-            <div class="point-box point-box-2">
-              <div class="point point2"></div>  
-            </div>
-            <div class="point-box point-box-3">
-              <div class="point point3"></div>
-            </div>
-            <div class="point-box point-box-4">
-              <div class="point point4"></div>
-            </div>
-            <div class="point-box point-box-5">
-              <div class="point point5"></div>
-            </div>
-            <div class="point-box point-box-6">
-              <div class="point point6"></div>
-            </div>
-          </div> -->
-          <img src="image/301.gif" class="point-container">
-        </div>
-        <div class="switch">
-          <div class="rope" title="登录"></div>
-            <div class="rope-tag">
-              <!--<img src="../image/tag.png" alt="" class="rope-tag">-->
-            </div>
-            <div class="rope-logo" title="登录">
-              <!--<img src="../image/logo.png" alt="" class="rope-logo">-->
-            </div>
-        </div>
-    </div>
-    <div class="nav-box">
-      <div class="nav-logo">
-        <!-- <img src="../image/logo.png" alt="logo"> -->
-      </div>
-      <ul id="nav">
-        <li class="current">
-          <a href="#section-1" class="nav-a nav-1">
-            <span class="nav-image nav-image-1"></span>
-            <span class="nav-text">简介</span>
-          </a>
-        </li>
-        <li>
-          <a href="#section-2" class="nav-a nav-2">
-            <span class="nav-image nav-image-2"></span>
-            <span class="nav-text">核心成员</span>
-          </a>
-        </li>
-        <li>
-          <a href="#section-3" class="nav-a nav-3">
-            <span class="nav-image nav-image-3"></span>
-            <span class="nav-text">作品展示</span>
-          </a>
-        </li>
-        <li>
-          <a href="#section-4" class="nav-a nav-4">
-            <span class="nav-image nav-image-4"></span>
-            <span class="nav-text">关于我们</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div id="container">
-    <div class="callbacks_container">
-      <ul class="rslides" id="slider4">
-        <li>
-          <div class="slider-image slider-image1">
-            <img src="" id="slider-01">
-          </div>
-          <p class="caption">毕业了,但我们依然紧密相连！</p>
-        </li>
-        <li>
-          <div class="slider-image slider-image2">
-            <img src="" id="slider-02">
-          </div>
-          <p class="caption">这是一个温暖的大家庭！</p>
-        </li>
-        <li>
-          <div class="slider-image slider-image3">
-            <img src="" id="slider-03">
-          </div>
-          <p class="caption">We are HCIer,we are a team forever！</p>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="section" id="section-1">
-      <h1 class="introduction-title"></h1>
-      <div class="introduction-logo">
-        <!--<img src="../image/logo.png" alt="">-->
-      </div>
-      <div class="introduction-content">
-        <h2>华南农业大学人机交互工作室</h2>
-        <p>
-          人机交互工作室（Human Computer Interaction Student Section）简称HCI@SCAU，是由华南农业大学计算机爱好者组建而成的学生创新实验室。
-          本团队最初创建于2004年，宗旨是为更多的计算机爱好者提供一个技术交流、学习和创新的平台。团队以项目为驱动，鼓励学生参加各种专业性学科竞赛和创新性研究，帮助学生拓展专业知识，锻炼学生自主研发的能力以及团队合作精神，致力于培养出符合IT行业需求的技术型人才。
-        </p>
-        <p class="video-introduction-box">
-          <a href="http://v.youku.com/v_show/id_XNTMxODI4NTA4.html" class="video-introduction" target="_bank">视频链接</a>
-        </p> 
-      </div>
-    </div>
-
-
-    <div class="section" id="section-2">
-      <h2 class="person-title">核心人员</h2>
-      <div class="person-row first-person-row">
-        <div class="person-item person-item-first">
-          <div class="upper">
-              <img src="" alt="HCI负责人" id="person1-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:HCI负责人</p>
-              <p class="lower-post">名字:梁广彬</p>
-              <p class="lower-content">个人简介:[HCI打杂的]本人专门为HCI打扫卫生,一枚小小码农！</p>
-              <p class="lower-study">研究方向:h5,js,java</p>
-          </div>
-        </div>
-        <div class="person-item">
-          <div class="upper">
-              <img src="" alt="HCI办公室负责人" id="person2-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:HCI办公室负责人</p>
-              <p class="lower-post">名字:陈娟娣</p>
-              <p class="lower-content">个人简介:[HCI围观的]本人爱美女也爱帅哥,进不了厨房,走不出厅堂,擅长罗里吧嗦,看云卷叹云舒,最喜围观HCI各技术牛人工作。</p>
-              <p class="lower-study">研究方向:教育</p>
-          </div>
-        </div>
-        <div class="person-item">
-          <div class="upper">
-              <img src="" alt="移动开发部部长" id="person3-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:移动开发部部长</p>
-              <p class="lower-post">名字:关文超</p>
-              <p class="lower-content">
-                个人简介:[HCI很帅气的]android程序猿,原产自侨乡一小岛,现放养于穗城华农大.
-              </p>
-              <p class="lower-study">研究方向:android</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="person-row">
-        <div class="person-item person-item-first">
-          <div class="upper">
-              <img src="" alt="web后台研发部部长" id="person4-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:web后台研发部部长</p>
-              <p class="lower-post">名字:钟政</p>
-              <p class="lower-content">个人简介:[HCI的守门员]本人虽然不会踢足球,但只要我还在工作室,进工作室的人都比须经过我的前面.</p>
-              <p class="lower-study">研究方向:java,js</p>
-          </div>
-        </div>
-        <div class="person-item">
-          <div class="upper">
-              <img src="" alt="系统测试部部长" id="person5-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:系统测试部部长</p>
-              <p class="lower-post">名字:陈洁强</p>
-              <p class="lower-content">个人简介:[HCI很低调的]软件工程专业学生，Linux爱好者,爱好后端技术,爱好GEEK玩意.</p>
-              <p class="lower-study">研究方向:linux,系统底层</p>
-          </div>
-        </div>
-        <div class="person-item">
-          <div class="upper">
-              <img src="" alt="HCI扫地僧" id="person6-img" class="person-img">
-          </div>
-          <div class="lower">
-              <p class="lower-name">职位:HCI扫地僧</p>
-              <p class="lower-post">名字:黄浩松</p>
-              <p class="lower-content">个人简介:[独孤求败]本人不求名利,两袖清风，只求一败！ </p>
-              <p class="lower-study">研究方向:研究广泛</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section" id="section-3">
-      <div class="prologue">
-        <!-- <h1>优秀项目展示</h1> -->
-        <!--  <button class="start-book-btn">
-          click me!
-        </button>  --> 
-        <div class="frame-top">
-          <span class="frame-rectangle frame-rectangle-first"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span>
-        </div>
-        <div class="prologue-content">
-          <div class="prologue-content-project">
-            <h2>优秀项目展示（部分）</h2>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <p>HCI官网</p>
-            <a href="" class="project-more">Surprise You!</a>
-          </div>
-          <div class="prologue-content-info">
-            <div class="prologue-content-technology">
-              <h2>精通技术（主要）</h2>
-              <p>web网站及游戏开发</p>
-              <p>软件开发</p>
-              <p>android移动开发</p>
-              <p>linux系统</p>
-            </div>
-            <div class="prologue-content-award">
-              <h2>获奖情况（部分）</h2>
-              <p>W3C 中国六周年峰会综合团队奖第三名</p>
-              <p>Adobe Test the Web Forward (Global) Second-Best</p>
-              <p>中国软件开发者大会最佳创意奖、最佳设计奖、最佳实现奖</p>
-              <p>全国网络电子商务创新应用比赛广东省二等奖</p>
-              <p>HTML5 CodeJam北京,深圳,广州站最佳团队奖,最佳设计奖</p>
-            </div>
-          </div>
-        </div>
-        <div class="frame-bottom">
-          <span class="frame-rectangle frame-rectangle-first"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span><span class="frame-rectangle"></span>
-        </div>
-      </div>
-      <div class="book-box">
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <div class="book-item">
-          <p class="book-item-aside">www.hci.com</p>
-          <p class="book-item-author">author:梁广彬</p>
-          <h2 class="book-item-title">HCI官网重构</h2>
-          <p class="book-item-content">炫！</p>
-          <p class="book-item-content">简介</p>
-          <p class="book-item-content">吸引</p>
-        </div>
-        <button class="back-menu">back to menu</button>
-      </div>
-      <div class="book" id="book">
-        <div class="book-left">
-          <h2 class="book-title">HCI官网重构</h2>
-          <p class="book-aside">
-            <span class="book-feature">特点:炫！简洁！吸引</span>
-            <span class="book-date">发布于 2012/09/01</span>
-          </p>
-          <div class="book-img-box">
-            <img alt="项目照片" class="book-img" id="book-img">
-          </div>
-        </div>
-        <div class="book-right">
-          <div class="book-introduction">
-            <h3 class="book-introduction-title">项目简介</h3>
-            <div class="book-introduction-content">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-          </div>
-          <div class="book-impression">
-            <h3 class="book-impression-title">项目感想</h3>
-            <div class="book-impression-content">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-          </div>
-          <div class="book-paticipate">
-            <h3 class="book-participate-title">参与人员</h3>
-            <div class="book-participate-row">
-              <span class="book-participate-item">XXX 用户体验部 </span>
-              <span class="book-participate-item">XXX 用户体验部 </span>
-            </div>
-            <div class="book-participate-row">
-              <span class="book-participate-item">XXX 移动开发部 </span>
-              <span class="book-participate-item">XXX 移动开发部 </span>
-            </div>
-            <div class="book-participate-row">
-              <span class="book-participate-item">XXX 移动开发部 </span>
-              <span class="book-participate-item">XXX 移动开发部 </span>
-            </div>
-          </div>
-          <div class="book-btn-row">
-            <div class="book-more-btn-row">
-              <div class="book-more-img">
-              <!--<img src="../image/about.png" class="book-more-img">-->
-              </div>
-              <button class="book-more-btn">更多详情</button>
-            </div>
-            <div class="book-exit-btn-row">
-              <div class="book-more-img">
-              <!--<img src="../image/about.png" class="book-more-img">-->
-              </div>
-              <button class="book-exit-btn">关闭</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="section-4">
-      <div class="about-container">
-        <h1 class="about-title">关于我们</h1>
-        <div class="about-left-box">
-          <p class="about-english-name">HCI</p>
-          <p class="about-chinese-name">人机交互研究中心学生部</p>
-          <div class="about-contact">
-             <div class="mail-logo">
-              <!--<img src="../image/Mail.png" alt="" class="mail-logo">-->
-            </div>
-            <span class="contact-mail">noonnightstorm@gmail.com</span>
-          </div>
-        </div>
-        <div class="about-right-box">
-          <div class="location-logo">
-            <!--<img src="../image/about-us.png" alt="" class="location-logo">-->
-          </div>
-          <p class="about-location">人机交互研究中心学生部位于华南农业大学信息学院院楼840教室.主要为广大师生们提供一个研发软硬件的优秀平台。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">©2012 华南农业大学人机交互实验室</div>
-  
-  <!--<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-  <script type="text/javascript" src="js/responsiveslides.min.js"></script>
-  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-  <script type="text/javascript" src="js/jquery.nav.js"></script> 
-  <script type="text/javascript" src="js/text.js"></script>-->
-  <script>
-    function loadScript(url,callback){
-      var script = document.createElement("Script");
-      script.type = "text/javascript";
-      script.src = url;
-      if(script.onreadystatechange !== undefined){
-         /*Fuck IE*/
-         script.onreadystatechange = function(){
-          if(!script.readyState || script.readyState == "loaded" || script.readyState == "complete"){
-            script.onreadyStatechange = null;
-            callback();
-          }
-         };
-      }
-      else{
-        script.onload = function(){
-          callback();
-        };
-      }
-      document.getElementsByTagName("body")[0].appendChild(script);
-    }
-    loadScript("js/jquery-1.7.min.js",function(){
-      loadScript("js/responsiveslides.min.js",function(){});
-      loadScript("js/jquery.scrollTo.js",function(){});
-      loadScript("js/jquery.nav.js",function(){});
-      loadScript("js/text.js",function(){});
-    });
-  </script>
+	<div>
+		<section class="join">
+			<div class="container">
+				<article class="join-word">
+					<div class="join-title"></div>
+					<ul>
+						<li>可以不是学霸，但是要有好的自学能力</li>
+						<li>可以不是才华横溢，但是要有创作能力</li>
+						<li>可以不是雷锋，但是要懂得分享</li>
+					</ul>
+				</article>
+				<div class="join-img">
+					<div class="logo"></div>
+				</div>
+			</div>
+		</section>
+		<section class="introduction">
+			<div class="container">
+				<article>
+					<h1>那么，WHO AM I</h1>
+					<p>人机交互工作室（Human Computer Interaction Student Section）简称HCI@SCAU，是由华南农业大学计算机爱好者组建而成的学生创新实验室。 本团队最初创建于2004年，宗旨是为更多的计算机爱好者提供一个技术交流、学习和创新的平台。团队以项目为驱动，鼓励学生参加各种专业性学科竞赛和创新性研究，帮助学生拓展专业知识，锻炼学生自主研发的能力以及团队合作精神，致力于培养出符合IT行业需求的技术型人才。</p>
+				</article>
+			</div>
+		</section>
+		<section class="excessive">
+			<div class="container">
+				<h1>平常干什么</h1>
+				<div class="arrow"></div>
+				<h1>想了解我们</h1>
+			</div>
+		</section>
+		<section class="item work">
+			<div class="container">
+				<div class="item-img">
+					<div class="work-title"></div>
+				</div>
+				<p class="item-word">我们平常会自己创作，用各种好玩的技术来创作属于我们自己的作品，偶尔会做学校或者老师的项目。每隔一段时间，我们会进行分享和交流，各位会交流一下最新的技术问题，另外也会针对新人进行技术的培训讲解。</p>
+			</div>
+		</section>
+		<section class="item amusement">
+			<div class="container">
+				<div class="item-img">
+					<div class="amusement-title"></div>
+				</div>
+				<p class="item-word">在周末和放假期间，除了各种分享和培训之外，我们还会举行一些户外活动。BBQ？打火锅？打球？想到的都可以有。连平常在工作室的时候也是充满温(ji)情的哇。大家互相做彼此的天使什么的^_^</p>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="footer-title">HCI@SCAU</p>
+			<p class="footer-content">地址：信息学院原楼840&nbsp&nbsp邮箱：scauhci@sina.cn</p>
+		</div>
+	</footer>
 </body>
 </html>
