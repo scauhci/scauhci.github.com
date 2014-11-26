@@ -7,6 +7,10 @@ body {
 	color: #000;
 }
 
+section,footer {
+	display: block;
+}
+
 .container {
 	width: 1000px;
 	height: 100%;
@@ -62,14 +66,14 @@ body {
 	background-color: #e3e1e1;
 }
 
-.introduction article h1 {
+.introduction h1 {
 	padding-top: 40px;
 	font-size: 50px;
 	margin: 0;
 	text-align: center;
 }
 
-.introduction article p {
+.introduction p {
 	font-size: 30px;
 	text-indent: 2em;
 }
